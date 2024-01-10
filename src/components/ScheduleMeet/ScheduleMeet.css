@@ -1,0 +1,61 @@
+.main h1 {
+    text-align: center;
+    color: #F47320;
+    font-weight: 500;
+}
+
+.main {
+    padding: 9px 50px 93px 50px !important;
+    background-color: #F3F3F3;
+}
+
+.go4114704207 {
+    font-size: 18px !important;
+}
+
+.container-schedule-meet {
+    border-radius: 8px;
+    border: 1px solid var(--Color-Grey-200, #ACACAC);
+    background: var(--Color-Grey-000, #FFF);
+    display: flex;
+    padding: 20px;
+}
+
+.go695645437 {
+    box-shadow: none !important;
+}
+
+.meet-details-section {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.meet-details-section span {
+    color: var(--Text-Text-Primary, #242424);
+    /* font-family: Montserrat; */
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: -3px 0px 0px 4px;
+    letter-spacing: 0.46px;
+}
+
+.button-log {
+    height: 56px;
+    padding: 8px 22px;
+    border-radius: 4px;
+    background: var(--Button-Primary-Default, #015030);
+    color: #FFFFFF
+}
+
+.radioStyle{
+    margin-left: 37px;
+}
+
+.meet-head{
+    color: #015030; 
+    font-weight: 500; 
+    font-size: 16px; 
+    margin: 0px 0px 16px 0px;
+}
