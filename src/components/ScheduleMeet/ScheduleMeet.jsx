@@ -12,6 +12,7 @@ import FormLabel from '@mui/material/FormLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const State = [
     {
@@ -41,11 +42,20 @@ const availableTimeslots = [0, 1, 2, 3, 4, 5].map((id) => {
 });
 
 function ScheduleMeet() {
+
+    const matches = useMediaQuery('(min-width:600px)');
+
     return (
         <div className="main">
             <h1>Schedule Your <span style={{ color: '#015030' }}>FREE, NO</span> Obligation Consultation</h1>
             <div className='container-schedule-meet'>
-                <div style={{ borderRight: "1px solid gray", maxWidth: "464px" }}>
+                <div style={{
+                    borderRight: !matches ? '' : "1px solid gray",
+                    borderBottom: matches ? '' : "1px solid gray",
+                    marginBottom: !matches ? '' : "10px",
+                    maxWidth: matches ? "400px" : "100%",
+                    padding: matches ? "0px 6px" : "",
+                }}>
                     <h5 className='meet-head'>Meeting Details</h5>
                     <div className='meet-details-section'>
                         <TimerIcon />
@@ -73,18 +83,28 @@ function ScheduleMeet() {
                             autoComplete="off"
                         >
                             <div>
+                                <div className='col-md-12'>
+                                <div className='row'>
+                                    <div className='col-md-6'>
+                                    <TextField
+                                        required
+                                        id="outlined-required"
+                                        label="Name"
+                                        defaultValue=""
+                                    />
+                                    </div>
+                                    <div className='col-md-6'>
+                                    <TextField
+                                        required
+                                        id="outlined-required"
+                                        label="Phone Number"
+                                        defaultValue=""
+                                    />
+                                    </div>
+                                    
+                                </div>
+                                </div>
                                 <TextField
-                                    required
-                                    id="outlined-required"
-                                    label="Name"
-                                    defaultValue=""
-                                />
-                                <TextField
-                                    required
-                                    id="outlined-required"
-                                    label="Phone Number"
-                                    defaultValue=""
-                                /><TextField
                                     required
                                     id="outlined-required"
                                     label="Email"

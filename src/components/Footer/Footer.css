@@ -43,7 +43,7 @@
   }
   
   .footer-logo img {
-    height: 55px; /* Adjust according to your logo size */
+    height: 55px; 
   }
   
   .footer-links ul {
@@ -75,5 +75,19 @@
     max-width: 100%;
     margin: 0 10px; 
 } */
+
+li:hover{
+  text-decoration: underline;
+}
+
+.container-schedule-meet:first-child{
+  border-right: "1px solid grau" !important;
+}
+
+@media (max-width: 768px){
+  .container-schedule-meet{
+    flex-wrap: wrap;
+  }
+}
 
   

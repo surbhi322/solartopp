@@ -68,7 +68,7 @@
   }
   .top-right-textMain{
     /* color: #FFFFFF; */
-    margin: 4px 0px 0px 5px;
+    margin: 5px 0px 0px 5px;
     font-weight: bold;
   }
   
@@ -162,3 +162,24 @@ margin-left: 10px;
       color: #ffdd40;
     }
   } */
+  /* Your CSS file */
+
+/* Default display for all screen sizes */
+.solar-icon {
+  display: flex; /* Default display */
+  margin-right: 1rem; /* Default margin right */
+}
+
+/* Hide the icon on extra small screens */
+@media (max-width: 599px) {
+  .solar-icon {
+    display: none;
+  }
+}
+
+/* Override the default display for medium screens */
+@media (min-width: 600px) {
+  .solar-icon {
+    display: flex;
+  }
+}

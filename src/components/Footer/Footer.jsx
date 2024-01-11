@@ -3,6 +3,7 @@ import React from 'react';
 import './Footer.css';
 import { APlus, BIcon, FacebookIconsrc, InstaIcon, Location, NABCEP, Phone, SolarWhiteSvg, TwitterIcon, YoutubeIconsrc } from '../../svg/svg';
 import { Box } from '@mui/material';
+import useMediaQuery  from '@mui/material/useMediaQuery';
 // import { Tesla } from './assets/Images/Tesla.png'
 // import teslaLogo from '../assets/Images/Tesla.png';
 
